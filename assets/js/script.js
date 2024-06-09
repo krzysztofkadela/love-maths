@@ -39,7 +39,22 @@ function runGame(gameType) {
 
 }
 
+/**
+ * Gets the operator (the numbers) and the operator (plus, minus etc)
+ * directly from the dom, and returns the correct answer.
+ */
 function calcculateCorrectAnswer() { 
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand2 = parseInt(document.getElementById('operand2').innetText);
+    let operator = document.getElementBuId('operator').innerText;
+
+    if(operator === "+") {
+        return [operand1 + operant2, "addition"];
+    } else {
+        alert(`Unimplemented operator ${operator}`);
+        throw `Unimplemented operator ${operator}.Aborting!`;
+
+    }
 
 }
 
